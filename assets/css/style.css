@@ -156,6 +156,8 @@ header {
     }
 
     .title-card {
+        padding: 1rem 0;
+        ;
         width: 100%;
         text-align: center;
         border: 1px solid lightgray;
@@ -173,7 +175,30 @@ header {
     }
 
     .subscription-content>* {
-        padding: 1rem 1rem;
+        padding: 1.5rem 1rem;
     }
 
+    .free-trial {
+        background-color: #0061fe;
+        padding: 0.5rem;
+        color: white;
+        width: 80%;
+        margin: auto;
+    }
+
+    .link-card {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .separator {
+        width: 20%;
+        border-top: 1px solid lightgray;
+        margin: 1.5rem 1.1rem;
+    }
+
+    .fa-check {
+        color: #0061fe;
+
+    }
 }
