@@ -9,7 +9,7 @@
 /* DEBUG */
 
 .debug {
-    *{
+    * {
         border: 1px dotted black
     }
 }
@@ -92,7 +92,8 @@ header {
         width: 100%;
     }
 
-    .img-jumbo>img {padding: 3rem;
+    .img-jumbo>img {
+        padding: 3rem;
         width: 100%;
     }
 
@@ -104,12 +105,13 @@ header {
     .content-jumbo {
         width: 45%;
 
-        p{
+        p {
             font-size: 1.2rem;
         }
     }
-    .content-jumbo>*{
-        padding:2rem 0;
+
+    .content-jumbo>* {
+        padding: 2rem 0;
     }
 
     i {
@@ -125,8 +127,8 @@ header {
 
     img {
         position: absolute;
-     bottom: -110px;
-     left: 0;
+        bottom: -110px;
+        left: 0;
     }
 
     .img-jumbo {
@@ -136,34 +138,42 @@ header {
 
 /* container-sm */
 
-.container-sm{
+.container-sm {
     margin-top: 150px;
-   
-    h2{
+
+    h2 {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
 
-    h2~label{
-        margin-right:1rem;
+    h2~label {
+        margin-right: 1rem;
     }
 
-    .subscription-type-card{
+    .subscription-type-card {
         width: calc(100%/3);
         margin: 3rem 0;
     }
-    .title-card{
-       width: 100%;
-       text-align: center;
-       border: 1px solid lightgray;
-    }
-    .subscription-content *{
-        padding: 1rem 1rem;
-    }
-    .subscription-content{
+
+    .title-card {
+        width: 100%;
+        text-align: center;
         border: 1px solid lightgray;
     }
+
+    .subscription-content {
+        border: 1px solid lightgray;
+    }
+
+    .subscription-icon {
+        display: flex;
+        ;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .subscription-content>* {
+        padding: 1rem 1rem;
+    }
+
 }
-
-
-
