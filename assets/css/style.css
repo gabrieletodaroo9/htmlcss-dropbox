@@ -217,13 +217,15 @@ header {
 
     }
 
-    /* Last card */
     .last-card-section {
         margin-top: 1rem;
     }
 
+    /* Last card */
+
     .team-personalized {
-        margin-bottom: 3rem;
+        padding: 2rem;
+        margin-bottom: 150px;
         width: 100%;
 
     }
@@ -236,8 +238,7 @@ header {
     }
 
     .left {
-        flex-basis: 70%;
-        padding: 1rem 2rem;
+        flex-basis: 60%;
     }
 
     .left>h3 {
@@ -250,8 +251,40 @@ header {
 
     .right {
         margin: 1rem;
-        flex-basis: 30%;
+        flex-basis: 45%;
         justify-content: flex-end;
         align-items: flex-start;
     }
-}
+
+    /* partner dropbox */
+
+    .left-section {
+        flex-basis: 60%;
+    }
+
+    .left-section>img {
+        width: 100%;
+    }
+
+    .right-section {
+        flex-basis: 40%;
+        padding: 4rem 2rem;
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .btn-white {
+        background-color: white;
+        border: 1px solid gray;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+        width: fit-content;
+    }
