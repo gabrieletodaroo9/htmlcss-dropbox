@@ -311,3 +311,15 @@ header {
         text-decoration: underline;
     }
 }
+
+footer {
+    .footer-grid{
+        display: grid;
+        font-size: small;
+        grid-template-columns: repeat(5, 1fr);
+        gap:0.5rem;
+        padding: 2rem 0;
+    }
+
+    
+}
