@@ -55,6 +55,10 @@ a {
     align-items: center;
 }
 
+.d-grid {
+    display: grid;
+}
+
 .c-gray {
     color: gray;
 }
@@ -160,11 +164,12 @@ header {
 
     /* CARD */
     .container-card {
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+
     }
 
     .subscription-type-card {
-        width: calc(90%/3 -1rem);
         margin: 3rem 0;
     }
 
@@ -181,11 +186,6 @@ header {
         border: 1px solid lightgray;
     }
 
-    .subscription-icon {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
 
     .subscription-content>* {
         padding: 1.5rem 1rem;
@@ -217,10 +217,6 @@ header {
 
     }
 
-    .last-card-section {
-        margin-top: 1rem;
-    }
-
     /* Last card */
 
     .team-personalized {
@@ -235,10 +231,7 @@ header {
         background-color: #0061fe;
         padding: 0.8rem 1.5rem;
         color: white;
-    }
-
-    .left {
-        flex-basis: 60%;
+        align-self: flex-start;
     }
 
     .left>h3 {
@@ -251,9 +244,6 @@ header {
 
     .right {
         margin: 1rem;
-        flex-basis: 45%;
-        justify-content: flex-end;
-        align-items: flex-start;
     }
 
     /* partner dropbox */
@@ -293,6 +283,7 @@ header {
     section~h2 {
         margin: 5rem 0 3rem;
     }
+    
 
     /* GRID CONTAINER */
 
