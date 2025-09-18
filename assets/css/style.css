@@ -549,7 +549,7 @@ footer {
 
     .left-image-section {
 
-        width: 90%;
+        width: 100%;
         object-fit: contain;
         padding: 5rem;
 
@@ -566,6 +566,8 @@ footer {
         p {
             padding-bottom: 0.5rem;
         }
-    }
+        
+           
+        }
 
 }
