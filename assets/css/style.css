@@ -423,3 +423,70 @@ footer {
         color: #5895f9;
     }
 }
+
+
+
+
+
+/* PAGINA DOWNLOAD APP DESKTOP */
+
+
+#app-main-desktop {
+    * {
+        font-family: "Zalando Sans Expanded", sans-serif;
+    }
+
+    h1 {
+        font-weight: 500;
+        padding-top: 0;
+    }
+
+    h1~p {
+        font-weight: 200;
+    }
+
+    .row-full {
+        display: flex;
+    }
+
+    .col-60.d-flex {
+        background-color: #BE4B0A;
+        justify-content: center;
+        padding: 3rem 0 1.5rem;
+        width: 100%;
+    }
+
+    .col-40 {
+        background-color: #F7F5F2;
+        padding: 3rem;
+    }
+
+    .install-button>a {
+        background-color: #0061fe;
+        color: blue;
+        padding: 2rem 3.5rem 2rem 1.8rem;
+        border-radius: 20px;
+        font-weight: 700;
+    }
+
+    .install-button {
+        margin-top: 4rem;
+    }
+
+    i {
+        padding-left: 4.1rem;
+    }
+
+    .other-info {
+        margin-top: 4rem;
+
+        a {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        i {
+            padding-left: 1rem;
+        }
+    }
+}
