@@ -20,10 +20,6 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-header {
-    padding: 1rem;
-}
-
 li {
     list-style: none;
 }
@@ -107,6 +103,7 @@ p {
     margin-left: 1rem;
     background-color: #0061fe;
     padding: 0.5rem;
+
 }
 
 .btn-white {
@@ -116,11 +113,15 @@ p {
     font-size: 1rem;
     margin-top: 1rem;
     width: fit-content;
+
+    &:hover {
+        color: gray;
+        box-shadow: 0 2px 4px gray;
+    }
 }
 
 .row {
     display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -147,6 +148,15 @@ p {
 /* HEADER */
 
 header {
+    ul *:not(logo) {
+        padding: 1.5rem 0;
+    }
+
+    padding: 0 1rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 
     .logo {
         margin-right: 1rem;
@@ -154,6 +164,20 @@ header {
 
     ul {
         gap: 2rem;
+    }
+
+    .btn-primary>a {
+        color: white;
+    }
+
+    li>a:hover {
+        border-bottom: 2px solid black;
+    }
+
+    .btn-primary:hover {
+        background-color: #5895f9;
+        box-shadow: 0 2px 4px gray;
+
     }
 }
 
@@ -182,10 +206,24 @@ header {
         font-size: 2rem;
     }
 
+    i {
+        padding-bottom: 2rem;
+    }
+
     .btn-free-trial {
         padding: 0.5rem;
         color: white;
         width: fit-content;
+    }
+
+    .btn-free-trial:hover {
+        background-color: #5895f9;
+        box-shadow: 0 2px 4px gray;
+    }
+
+    a:hover {
+        color: #0061fe;
+        text-shadow: 0 10px 8px gray;
     }
 }
 
@@ -202,18 +240,14 @@ header {
 
     .subscription-card {
         margin: 3rem 0;
+        border: 1px solid lightgray;
     }
 
     .card-header {
         padding: 1rem 0;
         width: 100%;
         text-align: center;
-        border: 1px solid lightgray;
-    }
-
-    .subscription-content,
-    .col-100 {
-        border: 1px solid lightgray;
+        border: 1px solid rgb(233, 233, 233);
     }
 
 
@@ -229,6 +263,11 @@ header {
         width: 75%;
         margin: 2rem auto;
         text-align: center;
+    }
+
+    .btn-free-trial:hover {
+        background-color: #5895f9;
+        box-shadow: 0 2px 4px gray;
     }
 
     .link-card {
@@ -251,76 +290,93 @@ header {
         padding: 2rem;
     }
 
-    /* Last card */
-
-    .last-column {
-        grid-column: span 3;
-        margin-bottom: 5rem;
+    .link-card:hover {
+        color: rgb(30, 117, 147);
+        text-decoration: none;
     }
+}
 
-    .btn-lightblue {
-        font-size: 1rem;
-        background-color: #0061fe;
-        padding: 0.8rem 1.5rem;
-        color: white;
-    }
+/* Last card */
 
-    .left>h3 {
+.last-column {
+    grid-column: span 3;
+    margin-bottom: 5rem;
+}
+
+.btn-lightblue {
+    font-size: 0.8rem;
+    background-color: #0061fe;
+    padding: 0.8rem 1.5rem;
+    color: white;
+}
+
+.btn-lightblue:hover {
+    background-color: #5895f9;
+    box-shadow: 0 2px 4px gray;
+}
+
+.left>h3 {
+    margin-bottom: 1.5rem;
+}
+
+.left>p {
+    margin-top: 1.5rem
+}
+
+.right {
+    margin: 2.3rem 0rem;
+}
+
+/* partner dropbox */
+
+.left-section>img {
+    width: 100%;
+}
+
+.right-section {
+    padding: 4rem 2rem;
+
+    & * {
         margin-bottom: 1.5rem;
     }
 
-    .left>p {
-        margin-top: 1.5rem
+    h3 {
+        font-size: 1.5rem;
     }
 
-    .right {
-        margin: 2.3rem 1rem;
-    }
-
-    /* partner dropbox */
-
-    .left-section>img {
-        width: 100%;
-    }
-
-    .right-section {
-        padding: 4rem 2rem;
-
-        & * {
-            margin-bottom: 1.5rem;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-        }
-    }
-
-    section~h2 {
-        margin: 5rem 0 3rem;
-    }
-
-
-    /* GRID CONTAINER */
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-
-    .img-grid-item>img {
-        width: 100%;
-    }
-
-    h2~a {
-        color: blue;
-        text-decoration: underline;
+    p {
+        font-size: 1.1rem;
     }
 }
+
+section~h2 {
+    margin: 5rem 0 3rem;
+}
+
+
+/* GRIGLIA CON TESTI */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.img-grid-item>img {
+    width: 100%;
+}
+
+h2~a {
+    color: blue;
+    text-decoration: underline;
+}
+
+h2~a:hover {
+    color: rgb(30, 117, 147);
+    text-decoration: none;
+}
+
+
 
 footer {
     color: white;
@@ -359,5 +415,11 @@ footer {
     .lenguage {
         padding-left: 3.4rem;
         padding-bottom: 2rem;
+    }
+
+    h3:hover,
+    a:hover,
+    .lenguage:hover {
+        color: #5895f9;
     }
 }
