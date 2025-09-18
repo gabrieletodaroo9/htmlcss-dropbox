@@ -17,7 +17,11 @@
 /* GENERICS */
 
 body {
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    padding: 1rem;
 }
 
 li {
@@ -27,6 +31,30 @@ li {
 a {
     text-decoration: none;
     color: black;
+}
+
+h1 {
+    padding-top: 3rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1.2rem;
 }
 
 /* UTILS */
@@ -59,14 +87,31 @@ a {
     display: grid;
 }
 
+.grid-columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
 .c-gray {
     color: gray;
+}
+.b-gray {
+    border: 1px solid lightgray;
+}
+
+.btn-primary {
+    margin-left: 1rem;
+    background-color: #0061fe;
+    padding: 0.5rem;
+
 }
 
 /* HEADER */
 
 header {
-    padding: 1rem;
 
     .logo {
         margin-right: 1rem;
@@ -75,13 +120,6 @@ header {
     ul {
         gap: 2rem;
     }
-
-    .start {
-        margin-left: 1rem;
-        background-color: #0061fe;
-        padding: 0.3rem;
-
-    }
 }
 
 /* JUMBOTRON */
@@ -89,54 +127,35 @@ header {
 .jumbotron {
     background-color: #b4d0e6;
 
-    h1 {
-        padding-top: 3rem;
-        font-size: 3.5rem;
-        font-weight: 900;
+    .jumbotron-img>img {
+        padding-left: 1rem;
         width: 100%;
+        position: absolute;
+        bottom: -80px;
+        left: 0;
     }
 
-    .img-jumbo>img {
-        padding: 3rem;
-        width: 100%;
+    .jumbotron-img {
+        width: 70%;
+        position: relative;
     }
 
-    .img-jumbo {
-        width: 55%;
-
+    .jumbotron-content {
+        width: 30%;
     }
 
-    .content-jumbo {
-        width: 45%;
-
-        p {
-            font-size: 1.2rem;
-        }
-    }
-
-    .content-jumbo>* {
+    .jumbotron-content>* {
         padding: 2rem 0;
     }
 
-    i {
+    .fa-arrow-down {
         font-size: 2rem;
     }
 
     .free-trial {
-        background-color: #0061fe;
         padding: 0.5rem;
         color: white;
         width: fit-content;
-    }
-
-    img {
-        position: absolute;
-        bottom: -110px;
-        left: 0;
-    }
-
-    .img-jumbo {
-        position: relative
     }
 }
 
@@ -145,35 +164,15 @@ header {
 .container-sm {
     margin-top: 150px;
 
-    h2 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    h4 {
-        font-size: 1.2rem;
-    }
-
     h2~label {
         margin-right: 1rem;
     }
 
-    /* CARD */
-    .container-card {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-
-    }
-
-    .subscription-type-card {
+    .subscription-card {
         margin: 3rem 0;
     }
 
-    .title-card {
+    .card-header {
         padding: 1rem 0;
         ;
         width: 100%;
@@ -283,7 +282,7 @@ header {
     section~h2 {
         margin: 5rem 0 3rem;
     }
-    
+
 
     /* GRID CONTAINER */
 
@@ -336,9 +335,9 @@ footer {
             color: white;
         }
     }
-    .container.lenguage{
+
+    .container.lenguage {
         padding-left: 3.4rem;
         padding-bottom: 2rem;
     }
 }
-

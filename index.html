@@ -10,10 +10,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" >
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- FONT -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
 
     <!-- CSS -->
@@ -24,19 +28,19 @@
 
 <!-- DEBUG -->
 
-<body class="debg">
+<body class="debu">
 
     <!-- NAVBAR -->
 
     <header class="d-flex justify-content-between ">
 
-        <!-- left -->
+        <!-- left nav -->
 
-        <nav class="left-menu d-flex align-items-center">
+        <nav class="left-nav d-flex align-items-center">
             <div class="logo">
                 <img src="./assets/img/logo-small.png" alt="logo-dropbox">
             </div>
-            <div class="left-link">
+            <div class="left-menu">
                 <ul class="d-flex">
                     <li>
                         <a href="">
@@ -57,10 +61,10 @@
             </div>
         </nav>
 
-        <!-- right -->
+        <!-- right nav -->
 
-        <nav class="right-menu d-flex align-items-center">
-            <div class="left-link">
+        <nav class="right-nav d-flex align-items-center">
+            <div class="right-menu">
                 <ul class="d-flex">
                     <li>
                         <a href="">
@@ -79,7 +83,7 @@
                     </li>
                 </ul>
             </div>
-            <span class="start">
+            <span class="btn-primary">
                 <a href="">
                     Inizia
                 </a>
@@ -101,13 +105,13 @@
             </div>
             <div class="container d-flex">
 
-                <div class="content-jumbo">
+                <div class="jumbotron-content">
                     <p>
                         Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso
                         posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e
                         integrato per ottimizzare il flusso di lavoro esistente.
                     </p>
-                    <div class="free-trial">
+                    <div class="btn-primary free-trial">
                         Inizia la prova gratuita
                     </div>
                     <p>
@@ -115,7 +119,7 @@
                     </p>
                     <i class="fa-solid fa-arrow-down"></i>
                 </div>
-                <div class="img-jumbo">
+                <div class="jumbotron-img">
                     <img src="./assets/img/jumbo.png" alt="">
                 </div>
             </div>
@@ -136,14 +140,15 @@
                 Fatturazione annuale
             </label>
 
+            <!-- CONTAINER CARD GRID -->
 
-            <div class="container-card d-grid">
+            <div class="container-cards d-grid grid-columns-3 gap-1">
 
 
                 <!-- PRIMA CARD -->
 
-                <div class="subscription-type-card">
-                    <div class="title-card ">
+                <div class="subscription-card">
+                    <div class="card-header ">
                         <span>
                             <i class="fa-solid fa-user"></i>
                         </span>
@@ -210,8 +215,8 @@
 
                 <!-- SECONDA CARD -->
 
-                <div class="subscription-type-card">
-                    <div class="title-card ">
+                <div class="subscription-card">
+                    <div class="card-header">
                         <span>
                             <i class="fa-solid fa-people-group"></i>
                         </span>
@@ -292,8 +297,8 @@
 
                 <!-- TERZA CARD -->
 
-                <div class="subscription-type-card">
-                    <div class="title-card ">
+                <div class="subscription-card">
+                    <div class="card-header ">
                         <span>
                             <i class="fa-solid fa-building"></i>
                         </span>
@@ -366,7 +371,7 @@
 
 
 
-            <div class="title-card ">
+            <div class="card-header ">
                 <span>
                     <i class="fa-solid fa-building"></i>
                 </span>
